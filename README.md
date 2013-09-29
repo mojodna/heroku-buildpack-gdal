@@ -4,7 +4,7 @@ I am a Heroku buildpack that installs [GDAL](http://www.gdal.org/) and its
 dependencies ([proj](https://trac.osgeo.org/proj/)).
 
 When used by myself, I will install GDAL and proj libraries, headers, and
-binaries.
+binaries. *Note:* it does *not* currently include the Python bindings.
 
 When used with
 [heroku-buildpack-multi](https://github.com/ddollar/heroku-buildpack-multi),
