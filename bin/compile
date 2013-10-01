@@ -56,7 +56,6 @@ echo "-----> Building runtime environment"
 mkdir -p $BUILD_DIR/.profile.d
 
 cat <<EOF > $BUILD_DIR/.profile.d/gdal.sh
-# Mapnik build and runtime paths
 export PATH="${PATH//$BUILD_DIR//app}:\$PATH"
 export LD_LIBRARY_PATH="\$LD_LIBRARY_PATH:${LD_LIBRARY_PATH//$BUILD_DIR//app}"
 export LIBRARY_PATH="\$LIBRARY_PATH:${LIBRARY_PATH//$BUILD_DIR//app}"
