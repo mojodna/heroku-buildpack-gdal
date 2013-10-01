@@ -49,6 +49,7 @@ export LIBRARY_PATH="\$LIBRARY_PATH\":$LIBRARY_PATH"
 export PKG_CONFIG_PATH="\$PKG_CONFIG_PATH\":$PKG_CONFIG_PATH"
 export CPPPATH="\$CPPPATH\":$CPPPATH"
 export CPATH="\$CPATH\":$CPATH"
+export GDAL_DATA="$BUILD_DIR/vendor/gdal/share/gdal"
 EOF
 
 echo "-----> Building runtime environment"
