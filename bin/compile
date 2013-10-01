@@ -42,7 +42,7 @@ vendor "https://s3.amazonaws.com/mojodna-heroku/proj-4.8.0-1.tar.gz"     "$BUILD
 
 echo "-----> Configuring build environment"
 
-cat <<EOF > $BUILD_DIR/build_env.sh
+cat <<EOF > export
 export PATH="$PATH:\$PATH"
 export LD_LIBRARY_PATH="\$LD_LIBRARY_PATH\":$LD_LIBRARY_PATH"
 export LIBRARY_PATH="\$LIBRARY_PATH\":$LIBRARY_PATH"
