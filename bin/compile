@@ -38,7 +38,7 @@ function vendor() {
 }
 
 echo "-----> Vendoring binaries"
-vendor "https://s3.amazonaws.com/mojodna-heroku/gdal-1.10.0-1.tar.gz"    "$BUILD_DIR/vendor/gdal"
+vendor "https://s3.amazonaws.com/mojodna-heroku/gdal-1.10.1-1.tar.gz"    "$BUILD_DIR/vendor/gdal"
 vendor "https://s3.amazonaws.com/mojodna-heroku/proj-4.8.0-1.tar.gz"     "$BUILD_DIR/vendor/proj"
 
 echo "-----> Configuring build environment"
