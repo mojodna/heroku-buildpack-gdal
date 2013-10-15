@@ -67,6 +67,16 @@ GDAL and proj were built in an Ubuntu 10.04 chroot / VM with the following
 options.  (See [heroku/stack-images](https://github.com/heroku/stack-images)
 for package listings and post-installation.)
 
+`chroot` preparation:
+
+```bash
+mkdir app tmp
+sudo /vagrant/bin/install-stack cedar64-2.0.0.img.gz
+sudo mount -o bind /dev /mnt/stacks/cedar64-2.0.0/dev/
+sudo mount -o bind /home/vagrant/tmp /mnt/stacks/cedar64-2.0.0/tmp/
+sudo mount -o bind /home/vagrant/app /mnt/stacks/cedar64-2.0.0/app/
+```
+
 proj:
 
 ```bash
