@@ -8,10 +8,7 @@ binaries. *Note:* this does *not* currently include the Python bindings.
 
 When used with
 [heroku-buildpack-multi](https://github.com/ddollar/heroku-buildpack-multi),
-I enable subsequent buildpacks / steps to link to these libraries.  (You'll
-need to use the `build-env` branch of [@mojodna's
-fork](https://github.com/mojodna/heroku-buildpack-multi/tree/build-env) for the
-build environment (`CPATH`, `LIBRARY_PATH`, etc.) to be set correctly.)
+I enable subsequent buildpacks / steps to link to these libraries.
 
 ## Using
 
@@ -38,7 +35,7 @@ git push heroku master
 When creating a new Heroku app:
 
 ```bash
-heroku apps:create -b https://github.com/mojodna/heroku-buildpack-multi.git#build-env
+heroku apps:create -b https://github.com/ddollar/heroku-buildpack-multi.git
 
 cat << EOF > .buildpacks
 https://github.com/mojodna/heroku-buildpack-gdal.git
@@ -51,7 +48,7 @@ git push heroku master
 When modifying an existing Heroku app:
 
 ```bash
-heroku config:set BUILDPACK_URL=https://github.com/mojodna/heroku-buildpack-multi.git#build-env
+heroku config:set BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
 
 cat << EOF > .buildpacks
 https://github.com/mojodna/heroku-buildpack-gdal.git
